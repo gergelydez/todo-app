@@ -20,22 +20,22 @@ h1 {
 h2 {
   font-family: "Ubuntu", sans-serif;
   color: white;
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 h3 {
   color: white;
   font-family: "Ubuntu", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   line-height: 1.5;
 }
 .container {
+  
   box-shadow: 6px 4px 15px 4px rgb(0, 0, 0, 0.3);
-  margin-top: 3rem;
-  padding: 1rem 5rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
   position: relative;
   border-radius: 1.5rem;
   width: 50%;
-  
 
   background: linear-gradient(
     90deg,
@@ -43,18 +43,20 @@ h3 {
     rgb(17, 213, 235) 100%
   );
 }
+
 .input {
+  display: inline;
   box-shadow: 6px 7px 20px 4px rgba(128, 128, 128, 0.3);
   font-family: "Ubuntu", sans-serif;
   color: white;
   /* padding: 0 10px; */
   font-size: 2rem;
   background-color: rgba(10, 10, 10, 0.2);
-  width: 93%;
-  height: 4.5rem;
+  width: 100%;
+  height: 4rem;
   outline: none;
   border: none;
-  border-radius: 20px;
+  border-radius: 0.7rem;
   outline: none;
 }
 .input::placeholder {
@@ -63,6 +65,8 @@ h3 {
 }
 
 .addbtn {
+  
+  display: inline;
   cursor: pointer;
   border-radius: 50%;
   border: none;
@@ -71,8 +75,12 @@ h3 {
   background-color: rgb(0, 0, 0, 0);
   position: absolute;
   right: 3rem;
-  top: 12rem;
+  top: 7.9rem;
   text-shadow: 6px 4px 15px 4px rgb(0, 0, 0, 0.5);
+  transition: transform ease .2s;
+}
+.addbtn:hover{
+  transform: scale(1.1);
 }
 
 li {
@@ -152,14 +160,12 @@ i {
 @media only screen and (max-width: 768px) {
   .container {
     width: 100%;
-    margin: 3rem;
-    padding: 1rem;
+    margin: 1rem;
+    
   }
   .modal {
-    width: 70%;
-    height: 28%;
+    width: 55%;
+    height: 25%;
     padding: 1rem;
-  
   }
-  
 }
